@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geetik - Site de rencontre pour Geeks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Geetik</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Accueil</a>
+        <a href="pages/parcourir.html" class="nav-link">Parcourir</a>
+        <a href="pages/messages.html" class="nav-link">Messages</a>
+        <a href="pages/evenements.html" class="nav-link">Événements</a>
+      </nav>
+      <div class="auth">
+        <a href="pages/connexion.html" class="btn btn-outline">Connexion</a>
+        <a href="pages/inscription.html" class="btn btn-primary">Inscription</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Trouvez Votre Joueur 2</h1>
+          <p>Connectez-vous avec d'autres geeks qui partagent vos passions pour les jeux vidéo, l'anime, la science-fiction et plus encore.</p>
+          <div class="hero-actions">
+            <a href="pages/inscription.html" class="btn btn-primary btn-lg">Rejoignez-nous</a>
+            <a href="#comment-ca-marche" class="btn btn-outline btn-lg">En savoir plus</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://plus.unsplash.com/premium_photo-1682088986607-5fbf0f1eb1ad?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Couple heureux jouant aux jeux vidéo">
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="comment-ca-marche">
+      <div class="container">
+        <h2>Comment Fonctionne Geetik</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">👤</div>
+            <h3>Créez Votre Profil</h3>
+            <p>Construisez un profil détaillé mettant en avant vos intérêts geek et vos fandoms préférés.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🎮</div>
+            <h3>Quiz Geek</h3>
+            <p>Notre algorithme vous met en relation avec des personnes partageant vos centres d'intérêt.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">💬</div>
+            <h3>Discutez</h3>
+            <p>Échangez avec vos matchs via notre chat thématique incluant des emojis spécifiques aux fandoms.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🎪</div>
+            <h3>Événements</h3>
+            <p>Participez à des soirées jeux, des projections et des rencontres en convention.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="interests">
+      <div class="container">
+        <h2>Trouvez des Matchs par Centre d'Intérêt</h2>
+        <div class="interests-grid">
+          <a href="pages/parcourir.html?interet=gaming" class="interest-card">
+            <img src="https://images.pexels.com/photos/3945683/pexels-photo-3945683.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gaming">
+            <span>Jeux Vidéo</span>
+          </a>
+          <a href="pages/parcourir.html?interet=anime" class="interest-card">
+            <img src="https://images.unsplash.com/photo-1666153184660-a09d73e5b755?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Anime & Manga">
+            <span>Anime & Manga</span>
+          </a>
+          <a href="pages/parcourir.html?interet=scifi" class="interest-card">
+            <img src="https://plus.unsplash.com/premium_photo-1682124752476-40db22034a58?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Science-Fiction & Fantasy">
+            <span>Science-Fiction & Fantasy</span>
+          </a>
+          <a href="pages/parcourir.html?interet=tech" class="interest-card">
+            <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tech & Coding">
+            <span>Tech & Programmation</span>
+          </a>
+          <a href="pages/parcourir.html?interet=boardgames" class="interest-card">
+            <img src="https://images.pexels.com/photos/776654/pexels-photo-776654.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Jeux de Société & JDR">
+            <span>Jeux de Société & JDR</span>
+          </a>
+          <a href="pages/parcourir.html?interet=cosplay" class="interest-card">
+            <img src="https://images.unsplash.com/photo-1558330405-45422b83de7b?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cosplay">
+            <span>Cosplay</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>Histoires de Réussite</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial">
+            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Sarah et Mike">
+            <p>"Nous nous sommes rencontrés grâce à notre passion commune pour Battlestar Galactica. Maintenant, nous préparons un mariage à thème !"</p>
+            <cite>Sarah & Mike</cite>
+          </div>
+          <div class="testimonial">
+            <img src="https://images.pexels.com/photos/3760805/pexels-photo-3760805.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Alex et Jamie">
+            <p>"Je n'aurais jamais pensé trouver quelqu'un qui aime autant D&D et les animes que moi. Merci Geetik !"</p>
+            <cite>Alex & Jamie</cite>
+          </div>
+          <div class="testimonial">
+            <img src="https://images.pexels.com/photos/4118050/pexels-photo-4118050.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Jordan et Taylor">
+            <p>"Notre passion commune pour le développement de jeux indé nous a réunis. Maintenant, nous créons des jeux ensemble !"</p>
+            <cite>Jordan & Taylor</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Prêt à Passer au Niveau Supérieur ?</h2>
+        <p>Rejoignez des milliers de geeks qui ont trouvé leur âme sœur sur Geetik.</p>
+        <a href="pages/inscription.html" class="btn btn-primary btn-lg">Inscrivez-vous</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Geetik</a>
+          <p>Connecter les geeks avec leur match parfait depuis 2025.</p>
+          <div class="social">
+            <a href="#" class="social-link">🌐</a>
+            <a href="#" class="social-link">📱</a>
+            <a href="#" class="social-link">📷</a>
+            <a href="#" class="social-link">🐦</a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h3>Explorer</h3>
+          <a href="pages/parcourir.html">Parcourir</a>
+          <a href="pages/evenements.html">Événements</a>
+          <a href="pages/forum.html">Forum</a>
+          <a href="pages/quiz.html">Quiz Geek</a>
+        </div>
+        <div class="footer-links">
+          <h3>Entreprise</h3>
+          <a href="pages/a-propos.html">À Propos</a>
+          <a href="pages/blog.html">Blog</a>
+          <a href="pages/carrieres.html">Carrières</a>
+          <a href="pages/contact.html">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h3>Légal</h3>
+          <a href="pages/conditions.html">Conditions</a>
+          <a href="pages/confidentialite.html">Confidentialité</a>
+          <a href="pages/cookies.html">Cookies</a>
+          <a href="pages/regles.html">Règles</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Geetik. Tous droits réservés.</p>
+        <select class="language-select">
+          <option>Français</option>
+          <option>English</option>
+          <option>Español</option>
+          <option>日本語</option>
+        </select>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

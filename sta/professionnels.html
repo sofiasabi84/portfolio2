@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professionnels - Volailles du Gard</title>
+    <meta name="description" content="Solutions sur mesure pour les professionnels de la restauration et de l'alimentation. Qualité et régularité garanties.">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Same header as other pages -->
+    <header class="header">
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="https://api.iconify.design/lucide:bird.svg?color=white" alt="Logo" width="32" height="32">
+                <span>Volailles du Gard</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="products.html">Nos Produits</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html#poulets">Poulets Entiers</a></li>
+                        <li><a href="products.html#cuisses">Cuisses</a></li>
+                        <li><a href="products.html#ailes">Ailes</a></li>
+                        <li><a href="products.html#oeufs">Œufs</a></li>
+                        <li><a href="products.html#transformes">Produits Transformés</a></li>
+                    </ul>
+                </li>
+                <li><a href="particuliers.html">Particuliers</a></li>
+                <li><a href="professionnels.html">Professionnels</a></li>
+         
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="#devis-pro" class="btn-primary">Devis Pro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Espace Professionnels</h1>
+                <p>Des solutions adaptées à vos besoins</p>
+            </div>
+        </section>
+
+        <section class="pro-services">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="https://api.iconify.design/lucide:utensils.svg" alt="Restauration" width="48" height="48">
+                        <h3>Restauration</h3>
+                        <p>Solutions pour restaurants et traiteurs</p>
+                        <ul class="service-details">
+                            <li>Livraison régulière</li>
+                            <li>Produits calibrés</li>
+                            <li>Tarifs préférentiels</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="https://api.iconify.design/lucide:store.svg" alt="Commerce" width="48" height="48">
+                        <h3>Commerce</h3>
+                        <p>Pour épiceries et magasins spécialisés</p>
+                        <ul class="service-details">
+                            <li>Conditionnement adapté</li>
+                            <li>Étiquetage personnalisé</li>
+                            <li>Support marketing</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="https://api.iconify.design/lucide:clipboard-list.svg" alt="Sur-mesure" width="48" height="48">
+                        <h3>Sur-mesure</h3>
+                        <p>Solutions personnalisées</p>
+                        <ul class="service-details">
+                            <li>Découpe spécifique</li>
+                            <li>Volumes importants</li>
+                            <li>Contrats annuels</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <h2>Nos Avantages Pro</h2>
+                <div class="advantages-grid">
+                    <div class="advantage">
+                        <h3>Qualité Constante</h3>
+                        <p>Production maîtrisée et contrôles qualité réguliers</p>
+                    </div>
+                    <div class="advantage">
+                        <h3>Flexibilité</h3>
+                        <p>Adaptation aux variations de volume selon vos besoins</p>
+                    </div>
+                    <div class="advantage">
+                        <h3>Traçabilité</h3>
+                        <p>Suivi complet de la production à la livraison</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="devis-pro" class="contact-section">
+            <div class="container">
+                <h2>Demande de Devis Professionnel</h2>
+                <form id="pro-form" class="contact-form" action="traitement.php" method="POST">
+
+                    <div class="form-group">
+                        <label for="company">Nom de l'entreprise</label>
+                        <input type="text" id="company" name="company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="siret">Numéro SIRET</label>
+                        <input type="text" id="siret" name="siret" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Nom du contact</label>
+                        <input type="text" id="contact" name="contact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email professionnel</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="activity">Secteur d'activité</label>
+                        <select id="activity" name="activity" required>
+                            <option value="">Sélectionnez votre secteur</option>
+                            <option value="restaurant">Restaurant</option>
+                            <option value="traiteur">Traiteur</option>
+                            <option value="commerce">Commerce alimentaire</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message et besoins spécifiques</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Envoyer la demande</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Same footer as other pages -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Volaille du Gard</h3>
+                    <p>Élevage de volailles en plein air dans le respect des traditions et du bien-être animal.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="accueil.html">Accueil</a></li>
+                        <li><a href="products.html">Nos Produits</a></li>
+                        <li><a href="commander.html">Passer Commande</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener">
+                            <img src="https://api.iconify.design/lucide:facebook.svg?color=white" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener">
+                            <img src="https://api.iconify.design/lucide:instagram.svg?color=white" alt="Instagram" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Volailles du Gard. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription - Geetik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="../index.html" class="logo">Geetik</a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Accueil</a>
+        <a href="parcourir.html" class="nav-link">Parcourir</a>
+        <a href="messages.html" class="nav-link">Messages</a>
+        <a href="evenements.html" class="nav-link">Événements</a>
+      </nav>
+      <div class="auth">
+        <a href="connexion.html" class="btn btn-outline">Connexion</a>
+        <a href="inscription.html" class="btn btn-primary active">Inscription</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="auth-section">
+      <div class="container">
+        <div class="auth-box">
+          <h1>Créez votre compte</h1>
+          <form class="auth-form">
+            <div class="form-group">
+              <label for="username">Nom d'utilisateur</label>
+              <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Mot de passe</label>
+              <input type="password" id="password" required>
+            </div>
+            <div class="form-group">
+              <label for="password-confirm">Confirmez le mot de passe</label>
+              <input type="password" id="password-confirm" required>
+            </div>
+            <div class="form-options">
+              <label>
+                <input type="checkbox" required> J'accepte les <a href="conditions.html">conditions d'utilisation</a>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">S'inscrire</button>
+          </form>
+          <div class="auth-footer">
+            <p>Déjà membre ? <a href="connexion.html">Connectez-vous</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">Geetik</a>
+          <p>Connecter les geeks avec leur match parfait depuis 2025.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Légal</h3>
+          <a href="conditions.html">Conditions</a>
+          <a href="confidentialite.html">Confidentialité</a>
+          <a href="cookies.html">Cookies</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Geetik. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

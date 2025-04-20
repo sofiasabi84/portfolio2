@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topographix - Géomètre Expert</title>
+    <link rel="icon" type="image/png" href="logoo.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Ajout du script EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compass">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                </svg>
+                <h1>Topographix</h1>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-list">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h2>Expert en Géométrie et Topographie</h2>
+            <p>Solutions précises et professionnelles pour tous vos besoins en mesure et cartographie</p>
+            <a href="#contact" class="btn">Demander un devis</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Bornage</h3>
+                    <p>Délimitation précise de votre propriété avec des repères officiels.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Relevé topographique</h3>
+                    <p>Mesures et représentation détaillée de votre terrain.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Implantation</h3>
+                    <p>Marquage précis des points de construction sur votre terrain.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Division parcellaire</h3>
+                    <p>Subdivision officielle de votre terrain en plusieurs lots.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Nos Réalisations</h2>
+            <div class="gallery-container">
+                <div class="gallery-main">
+                    <img src="img1.png" alt="Image principale">
+                </div>
+                <div class="gallery-nav">
+                    <button class="prev" aria-label="Image précédente">❮</button>
+                    <button class="next" aria-label="Image suivante">❯</button>
+                </div>
+                <div class="gallery-thumbs">
+                    <img src="img1.png" alt="Thumbnail 1" class="active">
+                    <img src="img2.jpg" alt="Thumbnail 2">
+                    <img src="img3.webp" alt="Thumbnail 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Demande de Devis</h2>
+            <div class="contact-grid">
+                <form id="devisForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service souhaité</label>
+                        <select id="service" name="service" required>
+                            <option value="">Sélectionnez un service</option>
+                            <option value="bornage">Bornage</option>
+                            <option value="topographie">Relevé topographique</option>
+                            <option value="implantation">Implantation</option>
+                            <option value="division">Division parcellaire</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Envoyer la demande</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Nos Coordonnées</h3>
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <p>628 Rue Jean-Henri Fabre, 84170 Monteux</p>
+                    </div>
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <p>+33 7 82 98 67 58</p>
+                    </div>
+                    <div class="info-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2"/>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                        </svg>
+                        <p>contact@topographix.fr</p>
+                    </div>
+                    <div class="hours">
+                        <h4>Horaires d'ouverture</h4>
+                        <ul>
+                            <li>Lundi - Vendredi : 9h00 - 18h00</li>
+                            <li>Samedi : Sur rendez-vous</li>
+                            <li>Dimanche : Fermé</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                    </svg>
+                    <span>Topographix</span>
+                </div>
+                <p>&copy; 2025 Topographix. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="notification" class="notification"></div>
+    <script src="script.js"></script>
+</body>
+</html>
